@@ -10,15 +10,16 @@ for i in range(p):
     n=input("請輸入名字")
     x.append(n)
     s=input("請輸入分數")
+    s=int(s)
     scr.append(s)
 for i in range(p):
-    total=total+int(scr(p))
-    if int(scr(p)) > high:
-        high=int(scr(p))
-    if int(scr(p)) <low
-        iow=int(scr(p))
+    total=total+scr[i]
+    if scr[i] > high:
+        high=scr[i]
+    if scr[i] <low:
+        low=scr[i]
 a=total/p
-print("總和是"total)
-print("平均是"a)
-print("最高分數是"high)
-print("最低分數是"low)
+print(a)
+print(high)
+print(low)
+print(total)
